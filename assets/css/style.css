@@ -820,6 +820,9 @@ body.modal-open .mm-slideout {
 .contact_us_section .form_wrapper_style .form-group .nice_select .list .option {
   color: #000;
 }
+.contact_us_section .form_wrapper_style .textarea_form_group {
+  height: 120px;
+}
 .contact_us_section .form_wrapper_style .btn_submit .btn {
   border-color: #e97176;
   transition: all 0.3s ease-in-out;
@@ -829,7 +832,121 @@ body.modal-open .mm-slideout {
   border-color: #1c1c20;
 }
 
+.location_card {
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+}
+.location_card .country {
+  display: flex;
+  align-items: center;
+}
+.location_card .country img {
+  width: 30px;
+}
+.location_card .country span {
+  font-family: helMedium;
+  font-size: 1.2rem;
+  margin-left: 13px;
+}
+.location_card .location_text {
+  margin: 25px 0;
+}
+.location_card .location_text p {
+  color: #4A4A4A;
+  font-size: 1.2rem;
+}
+.location_card .location_info .contact_card span {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #E97176;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location_card .location_info .contact_card span i {
+  color: #e97176;
+  font-size: 1.3rem;
+}
+.location_card .location_info .contact_card h5 {
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 15px;
+  font-family: helMedium;
+}
+
 /* ================================================================ */
+.footer_copy {
+  background-image: linear-gradient(to bottom, #232932, #1c1c20);
+}
+.footer_copy hr {
+  color: #464646;
+}
+
+.footer {
+  padding: 45px 0;
+}
+.footer .logo {
+  margin-bottom: 25px;
+}
+.footer .logo img {
+  width: 200px;
+}
+.footer .footer_content {
+  width: 80%;
+}
+.footer .footer_content p {
+  color: #fff;
+  font-size: 1rem;
+}
+.footer .social {
+  margin-top: 25px;
+}
+.footer .social li a {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-right: 15px;
+}
+.footer .social li a i {
+  font-size: 1.2rem;
+}
+.footer .footer_links h5 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: helMedium;
+  margin: 0;
+}
+.footer .footer_links img {
+  width: 30px;
+}
+.footer .footer_links li {
+  margin-top: 10px;
+}
+.footer .footer_links li a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.copy {
+  padding: 15px 0;
+}
+.copy .title {
+  color: #fff;
+  font-size: 1rem;
+}
+.copy li a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */

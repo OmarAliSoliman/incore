@@ -894,6 +894,9 @@ body.modal-open .mm-slideout {
         }
       }
     }
+    .textarea_form_group{
+      height: 120px;
+    }
     .btn_submit{
       .btn{
         border-color: $mainColor;
@@ -906,7 +909,134 @@ body.modal-open .mm-slideout {
     }
   }
 }
+.location_card{
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  .country{
+    display: flex;
+    align-items: center;
+    img{
+      width: 30px;
+    }
+    span{
+      font-family: $fonthelMedium;
+      font-size: 1.2rem;
+      margin-left: 13px;
+    }
+  }
+  .location_text{
+    margin: 25px 0;
+    p{
+      color: #4A4A4A;
+      font-size: 1.2rem;
+    }
+  }
+  .location_info{
+    .contact_card{
+      span{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #E97176;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+          color: $mainColor;
+          font-size: 1.3rem;
+        }
+      }
+      h5{
+        font-size: 1rem;
+        margin: 0;
+        margin-left: 15px;
+        font-family: $fonthelMedium;
+      }
+    }
+  }
+}
 /* ================================================================ */
+
+.footer_copy{
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#232932, 1),
+    rgba(#1c1c20, 1)
+  );
+  hr{
+    color: #464646;
+  }
+}
+
+.footer{
+  padding: 45px 0;
+  .logo{
+    margin-bottom: 25px;
+    img{
+      width: 200px;
+    }
+  }
+  .footer_content{
+    width: 80%;
+    p{
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  .social{
+    margin-top: 25px;
+    li{
+      a{
+        width: 40px;
+        height: 40px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        margin-right: 15px;
+        i{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .footer_links{
+    h5{
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: $fonthelMedium;
+      margin: 0;
+    }
+    img{
+      width: 30px;
+    }
+    li{
+      margin-top: 10px;
+      a{
+        color: #fff;
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+.copy{
+  padding: 15px 0;
+  .title{
+    color: #fff;
+    font-size: 1rem;
+  }
+  li{
+    a{
+      color: #fff;
+      font-size: .9rem;
+    }
+  }
+}
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
