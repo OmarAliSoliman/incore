@@ -21,23 +21,16 @@ $(document).ready(function () {
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 1150,
-          settings: {
-            slidesToShow: 3.3,
-            // centerMode: false,
-          },
-        },
-        {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 1.7,
+            slidesToShow: 4,
             // centerMode: false,
           },
         },
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 1.7,
+            slidesToShow: 3,
             // centerMode: false,
           },
         },
@@ -62,7 +55,7 @@ $(document).ready(function () {
       speed: 500,
       infinite: true,
       loop: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 120000,
       centerMode: true,
       autoplay: true,
       responsive: [
@@ -85,39 +78,71 @@ $(document).ready(function () {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            // centerMode: false,
+            centerMode: false,
           },
         },
       ],
     });
   }
 
-  // principles_slider
-  if ($(".principles_slider").length) {
-    $(".principles_slider").slick({
-      slidesToShow: 8,
+  if ($(".custom_navbar").length) {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 20) {
+        $(".custom_navbar").addClass("fixed_navbar");
+      } else {
+        $(".custom_navbar").removeClass("fixed_navbar");
+      }
+    });
+  }
+  if ($(".mobile_header").length) {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 20) {
+        $(".mobile_header").addClass("fixed_navbar");
+      } else {
+        $(".mobile_header").removeClass("fixed_navbar");
+      }
+    });
+  }
+
+  if ($("#phone").length) {
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js",
+      initialCountry: "ae",
+      showSelectedDialCode: true,
+    });
+  }
+
+  if ($("#phone2").length) {
+    const input = document.querySelector("#phone2");
+    window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js",
+      initialCountry: "ae",
+      showSelectedDialCode: true,
+    });
+  }
+
+  // promising_cards_slider
+  if ($(".promising_cards_slider").length) {
+    $(".promising_cards_slider").slick({
+      slidesToShow: 6,
       slidesToScroll: 1,
       arrows: false,
       dots: false,
-      speed: 5000,
+      speed: 300,
       infinite: true,
       loop: true,
-      autoplaySpeed: 100,
+      autoplaySpeed: 5000,
       centerMode: false,
       autoplay: true,
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 1150,
-          settings: {
-            slidesToShow: 6,
-            // centerMode: false,
-          },
-        },
-        {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3.5,
             // centerMode: false,
           },
         },
@@ -140,10 +165,11 @@ $(document).ready(function () {
     });
   }
 
-   // principles_slider
-   if ($(".client_slider").length) {
 
 
+
+  // principles_slider
+  if ($(".client_slider").length) {
     var $slider4 = $(".client_slider");
     var $progressBar4 = $(".our_produc_design_success_slider_progressbar");
     var $progressBarLabel4 = $(
@@ -162,8 +188,6 @@ $(document).ready(function () {
         $progressBarLabel4.text(calc + "% completed");
       }
     );
-
-
 
     $(".client_slider").slick({
       slidesToShow: 8,
@@ -356,7 +380,6 @@ $(document).ready(function () {
   var mySwiper1;
   var mySwiper2;
 
-
   if ($(".swiper_years_slider").length) {
     // swiper1 = $(".swiper_years_slider");
     mySwiper1 = new Swiper(".swiper_years_slider", {
@@ -441,7 +464,6 @@ $(document).ready(function () {
       controller: {
         control: mySwiper1, // Link to the second slider
       },
-      
     });
   }
 
@@ -452,30 +474,18 @@ $(document).ready(function () {
     AOS.refresh();
   });
 
+  if ($(".apply_job").length) {
+    $(".btn_apply_modal").on("click", function () {
+      $(".open_modal").addClass("active_open_modal");
+      $(".apply_jop_modal").addClass("active_apply_jop_modal");
+    });
 
-  if($(".apply_job").length){
-    $(".btn_apply_modal").on('click', function(){
-      $(".open_modal").addClass("active_open_modal")
-      $(".apply_jop_modal").addClass("active_apply_jop_modal")
-    })
-
-    $(".apply_jop_modal .close").on('click', function(){
-      $(".open_modal").removeClass("active_open_modal")
-      $(".apply_jop_modal").removeClass("active_apply_jop_modal")
-    })
-
+    $(".apply_jop_modal .close").on("click", function () {
+      $(".open_modal").removeClass("active_open_modal");
+      $(".apply_jop_modal").removeClass("active_apply_jop_modal");
+    });
   }
 
-
-  if($(".custom_navbar").length){
-    $(window).on('scroll', function(){
-      if($(this).scrollTop() > 20){
-        $(".custom_navbar").addClass("fixNav");
-      }else{
-        $(".custom_navbar").removeClass("fixNav");
-      }
-    })
-  }
 
   AOS.init();
 });
