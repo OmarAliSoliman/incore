@@ -172,6 +172,21 @@ $(document).ready(function () {
     });
   }
 
+  if($(".why_have_over_slider").length){
+    $(".why_have_over_slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      speed: 300,
+      infinite: true,
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      cssEase: "linear",
+    });
+  }
 
 
 
