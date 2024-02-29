@@ -157,8 +157,15 @@ $(document).ready(function () {
         {
           breakpoint: 600,
           settings: {
+            slidesToShow: 1.3,
+            centerMode: true,
+          },
+        },
+        {
+          breakpoint: 325,
+          settings: {
             slidesToShow: 1,
-            // centerMode: false,
+            centerMode: true,
           },
         },
       ],

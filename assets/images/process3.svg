@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="147.914" height="65.5" viewBox="0 0 147.914 65.5">
+  <g id="Strategy_Execution" data-name="Strategy Execution" transform="translate(-1436.957 -2244.75)">
+    <path id="Background" d="M141.714,0a6.2,6.2,0,0,1,0,12.4H106.285a6.2,6.2,0,0,1,0,12.4h19.486a6.2,6.2,0,1,1,0,12.4H116.76c-4.317,0-7.817,2.776-7.817,6.2q0,3.424,5.314,6.2a6.2,6.2,0,1,1,0,12.4H40.743a6.2,6.2,0,1,1,0-12.4H6.2a6.2,6.2,0,1,1,0-12.4H41.628a6.2,6.2,0,0,0,0-12.4H19.486a6.2,6.2,0,0,1,0-12.4H54.914a6.2,6.2,0,1,1,0-12.4Zm0,24.8a6.2,6.2,0,1,1-6.2,6.2A6.2,6.2,0,0,1,141.714,24.8Z" transform="translate(1436.957 2247)" fill="#f4f4f4" fill-rule="evenodd"/>
+    <g id="maze-strategy-1" transform="translate(1480.457 2245.5)">
+      <path id="Path_50556" data-name="Path 50556" d="M4.239,1.5H56.283a2.683,2.683,0,0,1,2.739,2.739V56.283a2.683,2.683,0,0,1-2.739,2.739H4.239A2.683,2.683,0,0,1,1.5,56.283V4.239A2.683,2.683,0,0,1,4.239,1.5Z" transform="translate(0 1.739)" fill="#ffebec"/>
+      <path id="Path_50557" data-name="Path 50557" d="M56.283,1.5H4.239A2.739,2.739,0,0,0,1.5,4.239V56.283a2.687,2.687,0,0,0,1.244,2.232L58.518,2.744A2.7,2.7,0,0,0,56.283,1.5Z" transform="translate(0 1.739)" fill="#fff"/>
+      <path id="Path_50558" data-name="Path 50558" d="M22.043,59.022H4.239A2.739,2.739,0,0,1,1.5,56.283V4.239A2.739,2.739,0,0,1,4.239,1.5H20.674" transform="translate(0 1.739)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50559" data-name="Path 50559" d="M21.848,1.5H32.8a2.739,2.739,0,0,1,2.739,2.739V56.283A2.739,2.739,0,0,1,32.8,59.022H15" transform="translate(23.478 1.739)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50560" data-name="Path 50560" d="M38.152,10.5H21.717V24.2H13.5" transform="translate(20.87 17.391)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50561" data-name="Path 50561" d="M30.326,6.5H18" transform="translate(28.696 10.435)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50562" data-name="Path 50562" d="M9.978,1.5V15.2H4.5" transform="translate(5.217 1.739)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50563" data-name="Path 50563" d="M1.5,10.5H15.2V24.2" transform="translate(0 17.391)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50564" data-name="Path 50564" d="M4.5,31.2V17.5" transform="translate(5.217 29.565)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50565" data-name="Path 50565" d="M17.717,63.5V49.8H9.5V19.674H20.457V.5" transform="translate(13.913 0)" fill="none" stroke="#f7858a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50566" data-name="Path 50566" d="M23.457,10.5H12.5" transform="translate(19.13 17.391)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50567" data-name="Path 50567" d="M19.5,13.5V38.152" transform="translate(31.304 22.609)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_50568" data-name="Path 50568" d="M11,7.348,17.848.5,24.7,7.348" transform="translate(16.522 0)" fill="none" stroke="#f7858a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

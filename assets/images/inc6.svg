@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Maps" transform="translate(-32.786 -73.745)">
+    <path id="Path_50794" data-name="Path 50794" d="M0,0H65V65H0Z" transform="translate(32.786 73.745)" fill="#fff"/>
+    <g id="style-three-pin-factory" transform="translate(37.786 76.245)">
+      <path id="Path_50531" data-name="Path 50531" d="M27.277.5A28.766,28.766,0,0,1,42.726,4.974C54.733,12.585,55.617,28.3,46.05,39.8A145.536,145.536,0,0,1,27.277,58.636,145.516,145.516,0,0,1,8.5,39.8C-1.061,28.3-.179,12.585,11.828,4.974A28.765,28.765,0,0,1,27.277.5Z" transform="translate(0 0)" fill="#f7858a"/>
+      <path id="Path_50532" data-name="Path 50532" d="M27.277,58.636A145.516,145.516,0,0,1,8.5,39.8C-1.061,28.3-.179,12.585,11.828,4.974A28.765,28.765,0,0,1,27.277.5Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_50533" data-name="Path 50533" d="M27.277.5A28.766,28.766,0,0,1,42.726,4.974C54.733,12.585,55.617,28.3,46.05,39.8A145.536,145.536,0,0,1,27.277,58.636,145.518,145.518,0,0,1,8.5,39.8C-1.061,28.3-.179,12.585,11.828,4.974A28.765,28.765,0,0,1,27.277.5Z" transform="translate(0 0)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
