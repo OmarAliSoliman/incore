@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5099" data-name="Rectangle 5099" width="91" height="91" transform="translate(0.5 0.5)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="seo-search-reward" transform="translate(-0.5 -0.5)" clip-path="url(#clip-path)">
+    <path id="Path_50569" data-name="Path 50569" d="M5.25,31.64a24.646,24.646,0,1,0,7.219-17.427A24.646,24.646,0,0,0,5.25,31.64Z" transform="translate(14.656 19.525)" fill="#fff"/>
+    <path id="Path_50570" data-name="Path 50570" d="M29.895,6.994A24.623,24.623,0,0,0,12.074,48.63L46.889,13.815A24.544,24.544,0,0,0,29.895,6.994Z" transform="translate(14.658 19.525)" fill="#fff"/>
+    <path id="Path_50571" data-name="Path 50571" d="M52.133,10.688a24.646,24.646,0,1,1-44.472,0" transform="translate(14.658 29.837)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_50572" data-name="Path 50572" d="M16.346,18.1,36.821,38.575" transform="translate(45.632 50.529)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_50573" data-name="Path 50573" d="M49.533,24.2a3.792,3.792,0,0,1-3.7,2.946H13.956a3.792,3.792,0,0,1-3.7-2.939L5.25,2.5,18.521,13.875,29.9,2.5,41.271,13.875,54.542,2.5Z" transform="translate(14.656 6.979)" fill="#fff" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_50574" data-name="Path 50574" d="M8.042,8.083A3.792,3.792,0,1,0,5.361,6.973,3.792,3.792,0,0,0,8.042,8.083Z" transform="translate(11.865 1.396)" fill="#f7858a" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_50575" data-name="Path 50575" d="M14.542,8.083a3.792,3.792,0,1,0-2.681-1.111A3.792,3.792,0,0,0,14.542,8.083Z" transform="translate(30.01 1.396)" fill="#f7858a" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_50576" data-name="Path 50576" d="M21.042,8.083a3.792,3.792,0,1,0-2.681-1.111A3.792,3.792,0,0,0,21.042,8.083Z" transform="translate(48.156 1.396)" fill="#f7858a" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

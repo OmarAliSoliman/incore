@@ -172,7 +172,7 @@ $(document).ready(function () {
     });
   }
 
-  if($(".why_have_over_slider").length){
+  if ($(".why_have_over_slider").length) {
     $(".why_have_over_slider").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -188,7 +188,58 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".features_slider").length) {
+    $(".features_slider").slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      speed: 300,
+      infinite: true,
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 3.5,
+            // centerMode: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            // centerMode: false,
+          },
+        },
 
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.3,
+            centerMode: true,
+          },
+        },
+        {
+          breakpoint: 325,
+          settings: {
+            slidesToShow: 1,
+            centerMode: true,
+          },
+        },
+      ],
+    });
+  }
+
+  if($(".blog_article_slider").length){
+    $(".blog_article_slider").slick({
+      dots: true,
+    })
+  }
 
   // principles_slider
   if ($(".client_slider").length) {
@@ -507,7 +558,6 @@ $(document).ready(function () {
       $(".apply_jop_modal").removeClass("active_apply_jop_modal");
     });
   }
-
 
   AOS.init();
 });

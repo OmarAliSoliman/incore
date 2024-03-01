@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+  <g id="icons" transform="translate(-16 -24)">
+    <path id="Path_50690" data-name="Path 50690" d="M0,0H68V68H0Z" transform="translate(16 24)" fill="#fff"/>
+    <g id="analytics-mountain" transform="translate(22.878 32.85)">
+      <path id="Path_50691" data-name="Path 50691" d="M3,33.437a6.945,6.945,0,0,0,6.822-5.695L12.6,12.53a5.556,5.556,0,0,1,10.913,0l2.778,15.212a6.945,6.945,0,0,0,6.8,5.695" transform="translate(3.287 7.918)" fill="#f8e4e5"/>
+      <path id="Path_50692" data-name="Path 50692" d="M8,33.437a6.945,6.945,0,0,0,6.822-5.695L17.6,12.53a5.556,5.556,0,0,1,10.913,0l2.778,15.212a6.945,6.945,0,0,0,6.8,5.695" transform="translate(9.862 7.918)" fill="#f7858a"/>
+      <path id="Path_50693" data-name="Path 50693" d="M8,33.437a6.945,6.945,0,0,0,6.822-5.695L17.6,12.53a5.556,5.556,0,0,1,10.913,0l2.778,15.212a6.945,6.945,0,0,0,6.8,5.695" transform="translate(9.862 7.918)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_50694" data-name="Path 50694" d="M53.744,48.3H1.657A1.157,1.157,0,0,1,.5,47.142V2" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_50695" data-name="Path 50695" d="M12.872,15.52c.421,2.315,1.06,8.056,7.241,8.056" transform="translate(16.269 17.778)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_50696" data-name="Path 50696" d="M3,33.461a6.945,6.945,0,0,0,6.822-5.695L12.6,12.555a5.556,5.556,0,0,1,8.8-3.442" transform="translate(3.287 7.893)" fill="none" stroke="#363e4a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
