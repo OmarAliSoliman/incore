@@ -142,14 +142,14 @@ $(document).ready(function () {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 3.5,
+            slidesToShow: 3.3,
             // centerMode: false,
           },
         },
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2.4,
             // centerMode: false,
           },
         },
@@ -203,16 +203,50 @@ $(document).ready(function () {
       cssEase: "linear",
       responsive: [
         {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            // centerMode: false,
+          },
+        },
+      ],
+    });
+  }
+
+  if ($(".blog_article_slider").length) {
+    $(".blog_article_slider").slick({
+      dots: true,
+      arrows: false,
+    });
+  }
+
+  // years_slider
+  if ($(".years_slider").length) {
+    $(".years_slider").slick({
+      slidesToShow: 11,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      speed: 1000,
+      infinite: false,
+      loop: false,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      asNavFor: ".years_content_slider",
+      autoplay: false,
+      focusOnSelect: false,
+      responsive: [
+        {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 3.5,
+            slidesToShow: 8,
             // centerMode: false,
           },
         },
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 5,
             // centerMode: false,
           },
         },
@@ -220,26 +254,63 @@ $(document).ready(function () {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1.3,
-            centerMode: true,
-          },
-        },
-        {
-          breakpoint: 325,
-          settings: {
-            slidesToShow: 1,
-            centerMode: true,
+            slidesToShow: 2,
+            // centerMode: false,
           },
         },
       ],
     });
   }
 
-  if($(".blog_article_slider").length){
-    $(".blog_article_slider").slick({
-      dots: true,
-    })
+  // years_content_slider
+  if ($(".years_content_slider").length) {
+    $(".years_content_slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      dots: false,
+      speed: 1000,
+      asNavFor: ".years_slider",
+      infinite: false,
+      loop: false,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: false,
+      focusOnSelect: false,
+    });
   }
+
+  $(".years_slider").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      // Set the width of line_between_color based on the direction of the change
+      if (nextSlide > currentSlide) {
+        console.log($(".year_card").eq(currentSlide).nextAll());
+        // Forward direction
+        console.log(currentSlide);
+        $(".year_card").eq(currentSlide).find(".year_box").css({
+          "background-color": "#e97176",
+          color: "#fff",
+        });
+        $(".year_card")
+          .eq(currentSlide)
+          .find(".line_after")
+          .css("background-color", "#e97176");
+      } else {
+        // Backward direction]
+        $(".year_card").eq(currentSlide).find(".year_box").css({
+          "background-color": "#fff",
+          color: "#000",
+        });
+        $(".year_card")
+          .eq(currentSlide)
+          .find(".line_after")
+          .css("background-color", "#fff");
+      }
+    }
+  );
+
 
   // principles_slider
   if ($(".client_slider").length) {
