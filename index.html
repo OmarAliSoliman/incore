@@ -69,6 +69,41 @@
 <body>
 
 
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li><a>Home</a></li>
+      <li>
+        <span>Products</span>
+        <ul>
+          <li><a href="">Products 1</a></li>
+          <li><a href="">Products 2</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <span>Services</span>
+        <ul>
+          <li><a href="">Services 1</a></li>
+          <li><a href="">Services 2</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Case Studies</a>
+      </li>
+
+      <li>
+        <a href="">Company</a>
+      </li>
+
+      <li>
+        <a href="">Blog</a>
+      </li>
+
+    </ul>
+  </nav>
+
   <div class="custom_navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
@@ -81,8 +116,28 @@
           <div class="nav_links">
             <ul class="list-unstyled d-flex align-items-center justify-content-between">
               <li class="nav_item active"><a href="" class="nav_link">Home</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Products <i class="fa-solid fa-caret-down"></i></a></li>
-              <li class="nav_item"><a href="" class="nav_link">Services <i class="fa-solid fa-caret-down"></i></a></li>
+              <li class="nav_item">
+                <a class="nav_link">Products <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sub_menu">
+                  <ul class="list-unstyled">
+                    <li><a href="">Products 1</a></li>
+                    <li><a href="">Products 2</a></li>
+                    <li><a href="">Products 3</a></li>
+                    <li><a href="">Products 4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link">Services <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sub_menu">
+                  <ul class="list-unstyled">
+                    <li><a href="">Services 1</a></li>
+                    <li><a href="">Services 2</a></li>
+                    <li><a href="">Services 3</a></li>
+                    <li><a href="">Services 4</a></li>
+                  </ul>
+                </div>
+              </li>
               <li class="nav_item"><a href="" class="nav_link">Case Studies</a></li>
               <li class="nav_item"><a href="" class="nav_link">Company</a></li>
               <li class="nav_item"><a href="" class="nav_link">Blog</a></li>
@@ -108,7 +163,7 @@
     <div class="container-fluid pd-100">
       <div class="wrapper d-flex align-items-center justify-content-between">
         <div class="burger_men">
-          <a href="">
+          <a href="#menu">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -133,17 +188,17 @@
             <div class="logo_mobile">
               <img src="./assets/images/logo.svg" alt="">
             </div>
-            <h1 class="header_title">Be a Part of <span>Our Success Stories</span></h1>
-            <h6 class="header_slogan">Intcore is</h6>
-            <p class="header_text col-lg-10">
+            <h1 class="header_title" data-aos="fade-up">Be a Part of <span>Our Success Stories</span></h1>
+            <h6 class="header_slogan" data-aos="fade-up" data-aos-duration="1000">Intcore is</h6>
+            <p class="header_text col-lg-10" data-aos="fade-up" data-aos-duration="1000">
               Best digital service company in Dubai providing website development, mobile app development, UI/UX design,
               digital marketing, and more…
             </p>
-            <a href="" class="header_link">
+            <a href="" class="header_link" data-aos="fade-up" data-aos-duration="1000">
               <span>Get Quotation</span>
               <i class="fa-solid fa-angles-right"></i>
             </a>
-            <div class="header_boxes">
+            <div class="header_boxes" data-aos="fade-up" data-aos-duration="1000">
               <img src="./assets/images/headerbox.svg" alt="">
               <!-- <div class="row">
                 <div class="col col-md-4 col-lg-4">
@@ -214,19 +269,19 @@
           <div class="form_wrapper">
             <h5 class="col-lg-6 mx-auto text-center">Leave Your Contact and will contact you ASAP</h5>
             <form action="">
-              <div class="form-group">
+              <div class="form-group" data-aos="fade-up" data-aos-duration="600">
                 <div class="icon"><i class="fas fa-user-circle"></i></div>
                 <input type="text" class="form-control" placeholder="What is your name?">
               </div>
-              <div class="form-group">
+              <div class="form-group" data-aos="fade-up" data-aos-duration="800">
                 <div class="icon"><i class="fas fas fa-at"></i></div>
                 <input type="text" class="form-control" placeholder="Let’s have your professional email">
               </div>
-              <div class="form-group">
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
                 <!-- <div class="icon"><i class="fas fas fa-user-circle"></i></div> -->
                 <input type="text" id="phone" class="form-control" placeholder="What about your Mobile?">
               </div>
-              <div class="form-group textarea_form_group">
+              <div class="form-group textarea_form_group" data-aos="fade-up" data-aos-duration="1200">
                 <textarea name="" class="form-control" placeholder="Like to tell us about your business?"></textarea>
               </div>
               <div class="btn_submit">
@@ -246,7 +301,7 @@
   <div class="how_help_you">
     <div class="container-fluid pd-100">
 
-      <div class="years_exp_box col-lg-12 col-xl-10 mx-auto">
+      <div class="years_exp_box col-lg-12 col-xl-10 mx-auto" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-3">
             <div class="number">
@@ -292,15 +347,15 @@
       </div>
 
       <div class="section_header">
-        <h5>How we help</h5>
-        <h6>Business Growth?</h6>
+        <h5 data-aos="fade-down" data-aos-duration="1000">How we help</h5>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Business Growth?</h6>
         <img src="./assets/images/section_header_line1.svg" alt="section_header_line1" title="section_header_line1">
       </div>
 
       <div class="help_cards">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="200">
               <div class="card_icon">
                 <img src="./assets/images/icon1.svg" alt="help-img" title="help-img">
               </div>
@@ -312,7 +367,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="400">
               <div class="card_icon">
                 <img src="./assets/images/icon2.svg" alt="help-img" title="help-img">
               </div>
@@ -324,7 +379,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="600">
               <div class="card_icon">
                 <img src="./assets/images/icon3.svg" alt="help-img" title="help-img">
               </div>
@@ -336,7 +391,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="800">
               <div class="card_icon">
                 <img src="./assets/images/icon4.svg" alt="help-img" title="help-img">
               </div>
@@ -348,7 +403,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="1000">
               <div class="card_icon">
                 <img src="./assets/images/icon5.svg" alt="help-img" title="help-img">
               </div>
@@ -360,7 +415,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="help_card">
+            <div class="help_card" data-aos="fade-up" data-aos-duration="1200">
               <div class="card_icon">
                 <img src="./assets/images/icon6.svg" alt="help-img" title="help-img">
               </div>
@@ -380,175 +435,175 @@
   <div class="brands">
     <div class="conatiner-fluid pd-100">
       <div class="section_header">
-        <h5>How many brands</h5>
-        <h6>Trusted Intcore?</h6>
+        <h5 data-aos="fade-down" data-aos-duration="1000">How many brands</h5>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Trusted Intcore?</h6>
         <img src="./assets/images/section_header_line1.svg" alt="section_header_line1" title="section_header_line1">
       </div>
       <div class="brands_cards">
         <div class="row">
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="200">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="400">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="600">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="800">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1000">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1200">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div class="brand_card">
+            <div class="brand_card" data-aos="fade-up" data-aos-duration="1300">
               <div class="card_icon">
                 <img src="./assets/images/img_2.png" alt="brand" title="brand">
               </div>
@@ -584,11 +639,11 @@
   <div class="what_promise">
     <div class="container-fluid pd-100">
       <div class="section_header">
-        <h5>What we are</h5>
-        <h6>Promising You?</h6>
+        <h5 data-aos="fade-down" data-aos-duration="1000">What we are</h5>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Promising You?</h6>
         <img src="./assets/images/section_header_line1.svg" alt="section_header_line1" title="section_header_line1">
       </div>
-      <div class="promising_cards">
+      <div class="promising_cards" data-aos="fade-down" data-aos-duration="1000">
         <div class="promising_cards_slider">
           <div class="slider_item">
             <div class="promise_card">
@@ -690,12 +745,12 @@
   <div class="customers_say">
     <div class="container-fluid pd-100">
       <div class="section_header">
-        <h5>What our Customers Said About</h5>
-        <h6>Intcore Services</h6>
+        <h5 data-aos="fade-down" data-aos-duration="1000">What our Customers Said About</h5>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Intcore Services</h6>
         <img src="./assets/images/section_header_line1.svg" alt="section_header_line1" title="section_header_line1">
       </div>
 
-      <div class="customers_say_slider dots_style">
+      <div class="customers_say_slider dots_style" data-aos="fade-up" data-aos-duration="1000">
         <div class="slider_item">
           <div class="customers_say_card">
             <div class="row">
@@ -841,8 +896,8 @@
   <div class="contact_us_section">
     <div class="container-fluid pd-100">
       <div class="section_header">
-        <h5>Are you ready to grow</h5>
-        <h6>Your Business?</h6>
+        <h5 data-aos="fade-down" data-aos-duration="1000">Are you ready to grow</h5>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Your Business?</h6>
         <img src="./assets/images/section_header_line1.svg" alt="section_header_line1" title="section_header_line1">
       </div>
       <div class="contact_coulmn">
@@ -852,25 +907,25 @@
               <form action="">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="form-group">
+                    <div class="form-group" data-aos="fade-up" data-aos-duration="200">
                       <div class="icon"><i class="fas fa-user-circle"></i></div>
                       <input type="text" class="form-control" placeholder="What is your name?">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="form-group">
+                    <div class="form-group" data-aos="fade-up" data-aos-duration="400">
                       <div class="icon"><i class="fas fas fa-at"></i></div>
                       <input type="text" class="form-control" placeholder="Let’s have your professional email">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="form-group">
+                    <div class="form-group" data-aos="fade-up" data-aos-duration="600">
                       <!-- <div class="icon"><i class="fas fas fa-user-circle"></i></div> -->
                       <input type="text" id="phone2" class="form-control" placeholder="What about your Mobile?">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="form-group">
+                    <div class="form-group" data-aos="fade-up" data-aos-duration="800">
                       <div class="icon"><i class="fas fas fa-user-circle"></i></div>
                       <select name="" class="form-control nice_select" id="">
                         <option value="">My budget is</option>
@@ -878,13 +933,13 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group textarea_form_group">
+                    <div class="form-group  textarea_form_group" data-aos="fade-up" data-aos-duration="1000">
                       <textarea name="" class="form-control"
                         placeholder="Like to tell us about your business?"></textarea>
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="btn_submit">
+                    <div class="btn_submit" data-aos="fade-down" data-aos-duration="1200">
                       <button type="submit" class="btn">
                         <img src="./assets/images/chat.svg" alt="chat" title="chat">
                         <span>Let’s Talk</span>
@@ -897,7 +952,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
             <div class="location_cards">
-              <div class="location_card">
+              <div class="location_card" data-aos="fade-right" data-aos-duration="1000">
                 <div class="country">
                   <img src="./assets/images/emarite.png" alt="country-img" title="country-img">
                   <span>United Arab of Emirates</span>
@@ -929,7 +984,7 @@
                 </div>
               </div>
             </div>
-            <div class="location_cards">
+            <div class="location_cards" data-aos="fade-right">
               <div class="location_card">
                 <div class="country">
                   <img src="./assets/images/emarite.png" alt="country-img" title="country-img">
@@ -972,7 +1027,7 @@
   <div class="footer_copy">
     <div class="footer">
       <div class="container-fluid pd-100">
-        <div class="logo">
+        <div class="logo" data-aos="fade-up" data-aos-duration="500" data-aos-offset="10">
           <a href="">
             <img src="./assets/images/logo.svg" alt="logo" title="logo">
           </a>
@@ -980,23 +1035,29 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="footer_content">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="500" data-aos-offset="10">
                 Intcore offers the “best digital services” for mobile app, web apps development, hosting, DevOps
                 services
                 and
                 performance marketing. Developing brands with enthusiasm and purpose.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="500" data-aos-offset="10">
                 Developing brands with enthusiasm and purpose.
               </p>
               <div class="social">
                 <ul class="list-unstyled d-flex align-items-center">
-                  <li><a href=""><i class="fab fa-vimeo-v"></i></a></li>
-                  <li><a href=""><i class="fab fa-behance"></i></a></li>
-                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href=""><i class="fab fab fa-twitter"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="200" data-aos-offset="10"><i
+                        class="fab fa-vimeo-v"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10"><i
+                        class="fab fa-behance"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="600" data-aos-offset="10"><i
+                        class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="800" data-aos-offset="10"><i
+                        class="fab fa-instagram"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="10"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="10"><i
+                        class="fab fab fa-twitter"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -1007,11 +1068,14 @@
               <img src="./assets/images/section_header_line1.svg" alt="section_header_line1"
                 title="section_header_line1">
               <ul class="list-unstyled">
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Event & Ticketing Management App</a></li>
-                <li><a href="">Web App Development</a></li>
-                <li><a href="">Hosting & Servers</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Home</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">About us</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Event & Ticketing
+                    Management App</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Web App Development</a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Hosting & Servers</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -1022,11 +1086,14 @@
               <img src="./assets/images/section_header_line1.svg" alt="section_header_line1"
                 title="section_header_line1">
               <ul class="list-unstyled">
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Event & Ticketing Management App</a></li>
-                <li><a href="">Web App Development</a></li>
-                <li><a href="">Hosting & Servers</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Home</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">About us</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Event & Ticketing
+                    Management App</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Web App Development</a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Hosting & Servers</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -1037,11 +1104,14 @@
               <img src="./assets/images/section_header_line1.svg" alt="section_header_line1"
                 title="section_header_line1">
               <ul class="list-unstyled">
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Event & Ticketing Management App</a></li>
-                <li><a href="">Web App Development</a></li>
-                <li><a href="">Hosting & Servers</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Home</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">About us</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Event & Ticketing
+                    Management App</a></li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Web App Development</a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="10"><a href="">Hosting & Servers</a>
+                </li>
               </ul>
             </div>
           </div>

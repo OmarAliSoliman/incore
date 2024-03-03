@@ -281,6 +281,7 @@ body.modal-open .mm-slideout {
   color: #fff;
   padding: 11px 35px;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 .custom_navbar .nav_links .active .nav_link {
   border-radius: 35px;
@@ -289,6 +290,42 @@ body.modal-open .mm-slideout {
 .custom_navbar .nav_links .nav_item:hover .nav_link {
   border-radius: 35px;
   background-color: #232932;
+}
+.custom_navbar .nav_item {
+  position: relative;
+}
+.custom_navbar .nav_item .sub_menu {
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 200px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 15px;
+  border-radius: 10px;
+  left: 0;
+  top: 40px;
+  box-shadow: 0px 0px 53px rgba(145, 145, 145, 0.1607843137);
+  transform: translateY(-15px);
+  transition: all 0.3s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom_navbar .nav_item .sub_menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6117647059);
+}
+.custom_navbar .nav_item .sub_menu li a {
+  color: #000;
+  width: 100%;
+  display: block;
+}
+.custom_navbar .nav_item .sub_menu li:hover a {
+  color: #e8696f;
+}
+.custom_navbar .nav_item:hover > .sub_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 .custom_navbar .navbar_content .phone_btn i {
   color: #e97176;
@@ -576,6 +613,13 @@ body.modal-open .mm-slideout {
 
 .inner_mobile_heaeder .header_img img {
   width: 80%;
+}
+
+.height_inner_mobile_heaeder {
+  padding: 180px 0;
+}
+.height_inner_mobile_heaeder .header_img img {
+  width: 70%;
 }
 
 .form_wrapper_style {
@@ -1338,6 +1382,20 @@ body.modal-open .mm-slideout {
   position: relative;
   z-index: 2;
 }
+.our_featured .features_slider_mobile {
+  position: relative;
+  z-index: 2;
+}
+.our_featured .features_slider_mobile .slider_img {
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+.our_featured .features_slider_mobile.dots_style .slick-dots li button {
+  background: #fff;
+}
+.our_featured .features_slider_mobile.dots_style .slick-dots li.slick-active button {
+  background: #e97176;
+}
 .our_featured .feature_btn {
   position: relative;
   z-index: 2;
@@ -1479,6 +1537,7 @@ body.modal-open .mm-slideout {
   width: 90%;
   margin: auto;
   margin-top: 85px;
+  min-height: 340px;
 }
 .how_we_do_card .card_icon {
   text-align: center;
@@ -1497,7 +1556,7 @@ body.modal-open .mm-slideout {
   font-family: helMedium;
 }
 .how_we_do_card .card_text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .opsite_start_up_lunch {
@@ -2324,7 +2383,7 @@ body.modal-open .mm-slideout {
 /* ================================================================ */
 .vision_mission {
   padding: 100px 0;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 .vision_mission .section_header {
   margin-bottom: 50px;
@@ -2348,7 +2407,7 @@ body.modal-open .mm-slideout {
 }
 
 .about_us_level_process {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .about_us_level_process .highprocess_card .card_body h5 {
   color: #e97176;
@@ -2364,6 +2423,52 @@ body.modal-open .mm-slideout {
 }
 
 /* ================================================================ */
+.case_study_internal {
+  background-color: #FFFFFF;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -150px;
+  position: relative;
+  padding: 50px 0;
+}
+.case_study_internal .section_header {
+  margin-bottom: 20px;
+}
+.case_study_internal .case_app_box {
+  background-color: #fff;
+  box-shadow: 0px 0px 53px rgba(145, 145, 145, 0.1607843137);
+  padding: 15px 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.case_study_internal .case_app_box h5 {
+  font-size: 1.8rem;
+  font-family: helMedium;
+}
+.case_study_internal .case_app_box p {
+  font-size: 1rem;
+  color: #363636;
+}
+.case_study_internal .btn_more {
+  text-align: right;
+}
+.case_study_internal .btn_more .btn {
+  background-color: #e8696f;
+  color: #fff;
+  border: 1px solid #e8696f;
+  padding: 8px 30px;
+  border-radius: 35px;
+  margin-top: 5px;
+  font-family: helMedium;
+}
+.case_study_internal .btn_more .btn img {
+  margin-right: 10px;
+}
+.case_study_internal .btn_more .btn:hover {
+  background-color: #202228;
+  border-color: #202228;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
@@ -2840,13 +2945,15 @@ body.modal-open .mm-slideout {
     margin: auto;
     margin-top: 30px;
   }
-  .our_process li, .our_process li:nth-of-type(even) {
+  .our_process li,
+  .our_process li:nth-of-type(even) {
     flex-direction: column-reverse;
   }
   .our_process li::after {
     display: none;
   }
-  .our_process li .card_icon, .our_process li:nth-of-type(even) .card_icon {
+  .our_process li .card_icon,
+  .our_process li:nth-of-type(even) .card_icon {
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 20px;
