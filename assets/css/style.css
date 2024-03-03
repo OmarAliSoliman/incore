@@ -361,6 +361,9 @@ body.modal-open .mm-slideout {
 .fixed_navbar .navbar_logo img {
   width: 100px;
 }
+.fixed_navbar .navbar_content .cont_btn {
+  padding: 10px;
+}
 
 .mobile_header {
   position: fixed;
@@ -620,6 +623,13 @@ body.modal-open .mm-slideout {
 }
 .height_inner_mobile_heaeder .header_img img {
   width: 70%;
+}
+
+.height_carrer_heaeder {
+  padding: 180px 0;
+}
+.height_carrer_heaeder .header_img img {
+  width: 60%;
 }
 
 .form_wrapper_style {
@@ -1592,6 +1602,11 @@ body.modal-open .mm-slideout {
   border: 1px solid #e97176;
   margin-top: 30px !important;
 }
+.opsite_start_up_lunch .start_up_text h5 {
+  font-size: 2.9rem;
+  font-family: helMedium;
+  color: #fff;
+}
 
 /* ================================================================ */
 .webdevelopment_content {
@@ -2470,6 +2485,109 @@ body.modal-open .mm-slideout {
 }
 
 /* ================================================================ */
+.what_make {
+  background-color: #FFFFFF;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -150px;
+  position: relative;
+  padding: 60px 0 140px 0;
+}
+.what_make .section_header {
+  margin-bottom: 40px;
+}
+.what_make .what_make_wrapper .what_make_img {
+  text-align: center;
+}
+.what_make .what_make_parg p {
+  color: #1C1C20;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.what_avilible_jobs {
+  background-color: #F4F4F4;
+  padding: 60px 0 100px 0;
+}
+
+.what_avilible_job_card {
+  background-color: #fff;
+  box-shadow: 0px 0px 53px rgba(145, 145, 145, 0.1607843137);
+  padding: 30px 32px;
+  margin-top: 36px;
+  border-radius: 20px;
+}
+.what_avilible_job_card h5 {
+  font-family: helMedium;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+.what_avilible_job_card .info .info_cont {
+  margin-right: 35px;
+}
+.what_avilible_job_card .info .icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #e97176;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.what_avilible_job_card .info .icon img {
+  flex: none;
+}
+.what_avilible_job_card .info .icon i {
+  color: #e97176;
+  font-size: 0.9rem;
+}
+.what_avilible_job_card .info img {
+  margin-right: 7px;
+}
+.what_avilible_job_card .job_resposibility {
+  margin-top: 35px;
+}
+.what_avilible_job_card .job_resposibility h5 {
+  font-size: 1.2rem;
+  color: #e97176;
+  font-family: helMedium;
+}
+.what_avilible_job_card .job_resposibility li {
+  margin-bottom: 10px;
+}
+.what_avilible_job_card .job_resposibility li p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.what_avilible_job_card .btn_options {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.what_avilible_job_card .btn_options a {
+  background-color: #232932;
+  color: #fff;
+  padding: 15px 28px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 35px;
+  margin-right: 10px;
+}
+.what_avilible_job_card .btn_options a span {
+  margin-left: 15px;
+  font-family: helMedium;
+}
+.what_avilible_job_card .btn_options a:hover {
+  opacity: 0.8;
+}
+.what_avilible_job_card .btn_options a:last-child {
+  background-color: #e97176;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
@@ -2972,6 +3090,11 @@ body.modal-open .mm-slideout {
   }
   .work_withtop_card .card_icon {
     margin-bottom: 20px;
+  }
+  .what_avilible_job_card .btn_options a {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 /* ================================================================ */

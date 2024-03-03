@@ -432,7 +432,11 @@ body.modal-open .mm-slideout {
       width: 100px;
     }
   }
+  .navbar_content .cont_btn{
+    padding: 10px;
+  }
 }
+
 
 .mobile_header {
   position: fixed;
@@ -722,6 +726,15 @@ body.modal-open .mm-slideout {
   .header_img {
     img {
       width: 70%;
+    }
+  }
+}
+
+.height_carrer_heaeder{
+  padding: 180px 0;
+  .header_img {
+    img {
+      width: 60%;
     }
   }
 }
@@ -1769,6 +1782,13 @@ body.modal-open .mm-slideout {
       margin-top: 30px !important;
     }
   }
+  .start_up_text{
+    h5{
+      font-size: 2.9rem;
+      font-family: $fonthelMedium;
+      color: #fff;
+    }
+  }
 }
 
 /* ================================================================ */
@@ -2699,6 +2719,114 @@ body.modal-open .mm-slideout {
 
 }
 /* ================================================================ */
+.what_make{
+  background-color: #FFFFFF;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -150px;
+  position: relative;
+  padding: 60px 0 140px 0;
+  .section_header{
+    margin-bottom: 40px;
+  }
+  .what_make_wrapper{
+    .what_make_img{
+      text-align: center;
+    }
+  }
+  .what_make_parg{
+    p{
+      color: #1C1C20;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.what_avilible_jobs{
+  background-color: #F4F4F4;
+  padding: 60px 0 100px 0;
+}
+.what_avilible_job_card{
+  background-color: #fff;
+  box-shadow: 0px 0px 53px #91919129;
+  padding: 30px 32px;
+  margin-top: 36px;
+  border-radius: 20px;
+  h5{
+    font-family: $fonthelMedium;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+  .info{
+    .info_cont{
+      margin-right: 35px;
+    }
+    .icon{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 1px solid $mainColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      img{
+        flex: none;
+      }
+      i{
+        color: $mainColor;
+        font-size: .9rem;
+      }
+    }
+    img{
+      margin-right: 7px;
+    }
+  }
+
+  .job_resposibility{
+    margin-top: 35px;
+    h5{
+      font-size: 1.2rem;
+      color: $mainColor;
+      font-family: $fonthelMedium;
+    }
+    li{
+      margin-bottom: 10px;
+      p{
+        margin: 0;
+        font-size: .9rem;
+      }
+    }
+  }
+  .btn_options{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    a{
+      background-color: #232932;
+      color: #fff;
+      padding: 15px 28px;
+      display: block;
+      width: fit-content;
+      border-radius: 35px;
+      margin-right: 10px;
+      span{
+        margin-left: 15px;
+        font-family: $fonthelMedium;
+      }
+      &:hover{
+        opacity: .8;
+      }
+    }
+    a:last-child{
+      background-color: $mainColor;
+
+    }
+  }
+}
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
@@ -3244,6 +3372,11 @@ body.modal-open .mm-slideout {
     .card_icon {
       margin-bottom: 20px;
     }
+  }
+  .what_avilible_job_card .btn_options a{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
