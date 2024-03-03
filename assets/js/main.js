@@ -354,6 +354,22 @@ $(document).ready(function () {
   }
 
 
+  // case_study_slider
+  if ($(".case_study_slider").length) {
+    $(".case_study_slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      speed: 1000,
+      infinite: false,
+      loop: false,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: false,
+      focusOnSelect: false,
+    });
+  }
   
 
   AOS.init();
