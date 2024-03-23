@@ -585,7 +585,7 @@ body.modal-open .mm-slideout {
 .website_heaeder .header_breadcrumb li a {
   color: #fff;
   font-family: helMedium;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-right: 10px;
 }
 .website_heaeder .header_breadcrumb li a i {
@@ -599,6 +599,9 @@ body.modal-open .mm-slideout {
 }
 .website_heaeder .header_breadcrumb li.active a {
   font-family: helLight;
+}
+.website_heaeder .header_img {
+  text-align: right;
 }
 
 .inner_website_heaeder {
@@ -2040,7 +2043,7 @@ body.modal-open .mm-slideout {
 }
 
 .webdevelopment_content_blog_article {
-  padding: 121px 0;
+  padding: 90px 0;
 }
 
 /* ================================================================ */
@@ -2057,6 +2060,10 @@ body.modal-open .mm-slideout {
   width: fit-content;
   margin: auto;
   font-family: helMedium;
+  transition: all 0.3s ease-in-out;
+}
+.blogs_cards .more_articles a span, .blogs_cards .more_articles a i {
+  transition: all 0.3s ease-in-out;
 }
 
 .blog_card {
@@ -2584,7 +2591,6 @@ body.modal-open .mm-slideout {
 }
 .what_avilible_job_card .btn_options a span {
   margin-left: 15px;
-  font-family: helMedium;
 }
 .what_avilible_job_card .btn_options a:hover {
   opacity: 0.8;
@@ -2669,7 +2675,6 @@ body.modal-open .mm-slideout {
 }
 .case_study .btn_options a span {
   margin-left: 15px;
-  font-family: helMedium;
 }
 .case_study .btn_options a:hover {
   opacity: 0.8;

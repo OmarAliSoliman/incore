@@ -115,14 +115,16 @@
   bottom: 70px;
 }
 
-.download_profile .pdf_link, .download_profile .meeting_link {
+.download_profile .pdf_link,
+.download_profile .meeting_link {
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
   z-index: 1;
 }
-.download_profile .pdf_link::before, .download_profile .meeting_link::before {
+.download_profile .pdf_link::before,
+.download_profile .meeting_link::before {
   content: "";
   display: block;
   width: 50px;
@@ -136,7 +138,8 @@
   top: -1em;
   left: -1em;
 }
-.download_profile .pdf_link::after, .download_profile .meeting_link::after {
+.download_profile .pdf_link::after,
+.download_profile .meeting_link::after {
   content: "";
   display: block;
   width: 50px;
@@ -150,18 +153,22 @@
   left: calc(100% + 1em);
   top: calc(100% + 1em);
 }
-.download_profile .pdf_link:hover::before, .download_profile .meeting_link:hover::before {
+.download_profile .pdf_link:hover::before,
+.download_profile .meeting_link:hover::before {
   height: 410px;
   width: 410px;
 }
-.download_profile .pdf_link:hover::after, .download_profile .meeting_link:hover::after {
+.download_profile .pdf_link:hover::after,
+.download_profile .meeting_link:hover::after {
   height: 410px;
   width: 410px;
 }
-.download_profile .pdf_link:hover span, .download_profile .meeting_link:hover span {
+.download_profile .pdf_link:hover span,
+.download_profile .meeting_link:hover span {
   color: #fff;
 }
-.download_profile .pdf_link:active, .download_profile .meeting_link:active {
+.download_profile .pdf_link:active,
+.download_profile .meeting_link:active {
   filter: brightness(0.8);
 }
 
@@ -186,6 +193,19 @@
 
 .what_promise {
   margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.vision_mission {
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+.vision_mission .section_header {
+  margin-bottom: 40px;
+}
+
+.level_process .section_header {
+  margin-bottom: 170px;
 }
 
 .form_wrapper_style form .btn_submit .btn {
@@ -243,11 +263,238 @@
   width: 35px;
 }
 
+.about_us_contetnt .slick-list {
+  padding-top: 0;
+}
+.about_us_contetnt .years_content_slider .slick-list {
+  padding-bottom: 0;
+}
+
+.blog_article_slider .lets_plane .btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 8px 35px;
+  z-index: 1;
+}
+.blog_article_slider .lets_plane .btn::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.blog_article_slider .lets_plane .btn::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.blog_article_slider .lets_plane .btn:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.blog_article_slider .lets_plane .btn:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.blog_article_slider .lets_plane .btn:hover span {
+  color: #fff;
+}
+.blog_article_slider .lets_plane .btn:active {
+  filter: brightness(0.8);
+}
+
+.blogs_cards .more_articles a {
+  padding: 15px 35px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.blogs_cards .more_articles a::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.blogs_cards .more_articles a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.blogs_cards .more_articles a:hover {
+  border: 1px solid #202228;
+}
+.blogs_cards .more_articles a:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.blogs_cards .more_articles a:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.blogs_cards .more_articles a:hover span,
+.blogs_cards .more_articles a:hover i {
+  color: #fff;
+}
+.blogs_cards .more_articles a:active {
+  filter: brightness(0.8);
+}
+
+.start_up_lunch .start_up_lunch_wrapper .parg a {
+  padding: 8px 35px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+  width: -moz-max-content;
+  width: max-content;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a:hover {
+  border: 1px solid #202228;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a:hover span,
+.start_up_lunch .start_up_lunch_wrapper .parg a:hover i {
+  color: #fff;
+}
+.start_up_lunch .start_up_lunch_wrapper .parg a:active {
+  filter: brightness(0.8);
+}
+
+.what_make {
+  padding-bottom: 70px;
+}
+
+.what_avilible_job_card .btn_options a {
+  padding: 8px 35px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.what_avilible_job_card .btn_options a::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.what_avilible_job_card .btn_options a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.what_avilible_job_card .btn_options a:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.what_avilible_job_card .btn_options a:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.what_avilible_job_card .btn_options a:hover span,
+.what_avilible_job_card .btn_options a:hover i {
+  color: #fff;
+}
+.what_avilible_job_card .btn_options a:active {
+  filter: brightness(0.8);
+}
+
 @media (max-width: 600px) {
   .download_profile .download_links {
     flex-direction: column !important;
   }
-  .download_profile .download_links .pdf_link, .download_profile .download_links .meeting_link {
+  .download_profile .download_links .pdf_link,
+  .download_profile .download_links .meeting_link {
     width: 100% !important;
     margin-bottom: 10px;
     justify-content: center;
