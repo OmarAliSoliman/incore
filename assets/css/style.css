@@ -460,13 +460,11 @@ body.modal-open .mm-slideout {
   color: #e97176;
   font-family: helMedium;
   margin-right: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .website_heaeder .header_link i {
   color: #000;
   transition: all 0.3s ease-in-out;
-}
-.website_heaeder .header_link:hover {
-  background-color: transparent;
 }
 .website_heaeder .header_link:hover i {
   color: #fff;
@@ -834,6 +832,7 @@ body.modal-open .mm-slideout {
   padding: 20px 20px;
   border-radius: 20px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .brand_card .card_icon {
   height: 100px;
@@ -872,9 +871,13 @@ body.modal-open .mm-slideout {
   font-size: 1rem;
   margin-left: 12px;
   font-family: helMedium;
+  transition: all 0.3s ease-in-out;
 }
-.download_profile .pdf_link:hover {
-  background-color: transparent;
+.download_profile .pdf_link img {
+  transition: all 0.3s ease-in-out;
+}
+.download_profile .pdf_link:hover img {
+  filter: brightness(0) invert(1);
 }
 .download_profile .meeting_link {
   background-color: #e97176;
@@ -894,7 +897,10 @@ body.modal-open .mm-slideout {
   font-family: helMedium;
 }
 .download_profile .meeting_link:hover {
-  background-color: transparent;
+  border-color: #fff;
+}
+.download_profile .meeting_link:hover i {
+  color: white;
 }
 
 /* ================================================================ */
@@ -1092,7 +1098,6 @@ body.modal-open .mm-slideout {
   transition: all 0.3s ease-in-out;
 }
 .contact_us_section .form_wrapper_style .btn_submit .btn:hover {
-  background-color: #1c1c20;
   border-color: #1c1c20;
 }
 

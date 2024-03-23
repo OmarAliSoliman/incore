@@ -567,13 +567,14 @@ body.modal-open .mm-slideout {
       color: $mainColor;
       font-family: $fonthelMedium;
       margin-right: 15px;
+      transition: all .3s ease-in-out;
     }
     i {
       color: #000;
       transition: all 0.3s ease-in-out;
     }
     &:hover {
-      background-color: transparent;
+      // background-color: transparent;
       i {
         color: #fff;
       }
@@ -969,6 +970,7 @@ body.modal-open .mm-slideout {
   padding: 20px 20px;
   border-radius: 20px;
   text-align: center;
+  transition: all .3s ease-in-out;
   .card_icon {
     height: 100px;
     // border: 1px solid #000;
@@ -1011,9 +1013,16 @@ body.modal-open .mm-slideout {
       font-size: 1rem;
       margin-left: 12px;
       font-family: $fonthelMedium;
+      transition: all .3s ease-in-out;
+    }
+    img{
+      transition: all .3s ease-in-out;
     }
     &:hover {
-      background-color: transparent;
+      // background-color: transparent;
+      img{
+        filter: brightness(0) invert(1);
+      }
     }
   }
   .meeting_link {
@@ -1032,7 +1041,11 @@ body.modal-open .mm-slideout {
       font-family: $fonthelMedium;
     }
     &:hover {
-      background-color: transparent;
+      // background-color: transparent;
+      border-color: #fff;
+      i{
+        color: #ffff;
+      }
     }
   }
 }
@@ -1257,7 +1270,7 @@ body.modal-open .mm-slideout {
         border-color: $mainColor;
         transition: all 0.3s ease-in-out;
         &:hover {
-          background-color: #1c1c20;
+          // background-color: #1c1c20;
           border-color: #1c1c20;
         }
       }

@@ -1,0 +1,257 @@
+/* Constant styles  */
+.custom_navbar .nav_links {
+  width: 765px;
+}
+.custom_navbar .nav_links .nav_link {
+  padding: 11px 28px;
+  position: relative;
+}
+.custom_navbar .navbar_content .cont_btn {
+  padding: 10px;
+}
+
+.website_heaeder .header_link {
+  padding: 8px 25px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.website_heaeder .header_link::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.website_heaeder .header_link::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.website_heaeder .header_link:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.website_heaeder .header_link:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.website_heaeder .header_link:hover span {
+  color: #fff;
+}
+.website_heaeder .header_link:active {
+  filter: brightness(0.8);
+}
+.website_heaeder .form_wrapper form .btn_submit .btn {
+  padding: 8px 25px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.website_heaeder .form_wrapper form .btn_submit .btn::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.website_heaeder .form_wrapper form .btn_submit .btn::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.website_heaeder .form_wrapper form .btn_submit .btn:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.website_heaeder .form_wrapper form .btn_submit .btn:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.website_heaeder .form_wrapper form .btn_submit .btn:hover span {
+  color: #fff;
+}
+.website_heaeder .form_wrapper form .btn_submit .btn:active {
+  filter: brightness(0.8);
+}
+.website_heaeder .header_svg {
+  bottom: 70px;
+}
+
+.download_profile .pdf_link, .download_profile .meeting_link {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.download_profile .pdf_link::before, .download_profile .meeting_link::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.download_profile .pdf_link::after, .download_profile .meeting_link::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.download_profile .pdf_link:hover::before, .download_profile .meeting_link:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.download_profile .pdf_link:hover::after, .download_profile .meeting_link:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.download_profile .pdf_link:hover span, .download_profile .meeting_link:hover span {
+  color: #fff;
+}
+.download_profile .pdf_link:active, .download_profile .meeting_link:active {
+  filter: brightness(0.8);
+}
+
+.how_help_you {
+  position: relative;
+  z-index: 2;
+}
+.how_help_you .section_header {
+  margin-top: 40px;
+}
+
+.brand_card {
+  transition: all 0.3s ease-in-out !important;
+}
+.brand_card .card_icon img {
+  filter: grayscale(0.7);
+  transition: all 0.3s ease-in-out;
+}
+.brand_card:hover .card_icon img {
+  filter: grayscale(0);
+}
+
+.what_promise {
+  margin-top: 0;
+}
+
+.form_wrapper_style form .btn_submit .btn {
+  padding: 8px 25px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.form_wrapper_style form .btn_submit .btn::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.form_wrapper_style form .btn_submit .btn::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #202228;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.form_wrapper_style form .btn_submit .btn:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.form_wrapper_style form .btn_submit .btn:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.form_wrapper_style form .btn_submit .btn:hover span {
+  color: #fff;
+}
+.form_wrapper_style form .btn_submit .btn:active {
+  filter: brightness(0.8);
+}
+
+.location_card .whatsapp_icon img {
+  width: 35px;
+}
+
+@media (max-width: 600px) {
+  .download_profile .download_links {
+    flex-direction: column !important;
+  }
+  .download_profile .download_links .pdf_link, .download_profile .download_links .meeting_link {
+    width: 100% !important;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=newstyle.css.map */
