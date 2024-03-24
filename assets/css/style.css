@@ -1170,6 +1170,7 @@ body.modal-open .mm-slideout {
   padding: 25px 34px 11px 34px;
   border-radius: 15px;
   margin-bottom: 26px;
+  min-height: 200px;
 }
 .how_increase_card .card_title {
   color: #e97176;
@@ -1191,6 +1192,7 @@ body.modal-open .mm-slideout {
 /* ================================================================ */
 .our_process {
   padding: 50px 0 93px 0;
+  padding-bottom: 35px;
 }
 .our_process .our_process_cards {
   margin: auto;
@@ -1805,10 +1807,12 @@ body.modal-open .mm-slideout {
   border-radius: 20px;
   margin-top: 40px;
   min-height: 280px;
+  text-align: center;
 }
 .work_withtop_card .card_icon {
   flex: none;
   margin-right: 25px;
+  margin-bottom: 25px;
 }
 .work_withtop_card p {
   font-size: 0.9rem;
@@ -2327,6 +2331,7 @@ body.modal-open .mm-slideout {
   max-width: 100%;
   height: 56px;
   margin: 0 12px;
+  cursor: pointer;
 }
 .about_us_contetnt .years_slider .year_card .year_box {
   width: 100%;
@@ -2607,6 +2612,7 @@ body.modal-open .mm-slideout {
   margin-top: -150px;
   position: relative;
   padding: 60px 0 140px 0;
+  padding-bottom: 80px;
 }
 .case_study .section_header {
   margin-bottom: 60px;

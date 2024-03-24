@@ -1349,6 +1349,7 @@ body.modal-open .mm-slideout {
   padding: 25px 34px 11px 34px;
   border-radius: 15px;
   margin-bottom: 26px;
+  min-height: 200px;
   .card_title {
     color: $mainColor;
     margin-bottom: 25px;
@@ -1369,6 +1370,7 @@ body.modal-open .mm-slideout {
 /* ================================================================ */
 .our_process {
   padding: 50px 0 93px 0;
+  padding-bottom: 35px;
   .our_process_cards {
     // border: 1px solid #000;
     margin: auto;
@@ -2026,9 +2028,11 @@ body.modal-open .mm-slideout {
   border-radius: 20px;
   margin-top: 40px;
   min-height: 280px;
+  text-align: center;
   .card_icon {
     flex: none;
     margin-right: 25px;
+    margin-bottom: 25px;
   }
   p {
     font-size: 0.9rem;
@@ -2580,6 +2584,7 @@ body.modal-open .mm-slideout {
       max-width: 100%;
       height: 56px;
       margin: 0 12px;
+      cursor: pointer;
       .year_box {
         width: 100%;
         height: 100%;
@@ -2880,6 +2885,7 @@ body.modal-open .mm-slideout {
   margin-top: -150px;
   position: relative;
   padding: 60px 0 140px 0;
+  padding-bottom: 80px;
   .section_header{
     margin-bottom: 60px;
   }

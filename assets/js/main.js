@@ -225,7 +225,7 @@ $(document).ready(function () {
     $(".years_slider").slick({
       slidesToShow: 11,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
       dots: false,
       speed: 1000,
       infinite: false,
@@ -234,7 +234,7 @@ $(document).ready(function () {
       centerMode: false,
       asNavFor: ".years_content_slider",
       autoplay: false,
-      focusOnSelect: false,
+      focusOnSelect: true,
       responsive: [
         {
           breakpoint: 1100,
@@ -267,7 +267,7 @@ $(document).ready(function () {
     $(".years_content_slider").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
       fade: true,
       dots: false,
       speed: 1000,
@@ -281,35 +281,35 @@ $(document).ready(function () {
     });
   }
 
-  $(".years_slider").on(
-    "beforeChange",
-    function (event, slick, currentSlide, nextSlide) {
-      // Set the width of line_between_color based on the direction of the change
-      if (nextSlide > currentSlide) {
-        console.log($(".year_card").eq(currentSlide).nextAll());
-        // Forward direction
-        console.log(currentSlide);
-        $(".year_card").eq(currentSlide).find(".year_box").css({
-          "background-color": "#e97176",
-          color: "#fff",
-        });
-        $(".year_card")
-          .eq(currentSlide)
-          .find(".line_after")
-          .css("background-color", "#e97176");
-      } else {
-        // Backward direction]
-        $(".year_card").eq(currentSlide).find(".year_box").css({
-          "background-color": "#fff",
-          color: "#000",
-        });
-        $(".year_card")
-          .eq(currentSlide)
-          .find(".line_after")
-          .css("background-color", "#fff");
-      }
-    }
-  );
+  // $(".years_slider").on(
+  //   "beforeChange",
+  //   function (event, slick, currentSlide, nextSlide) {
+  //     // Set the width of line_between_color based on the direction of the change
+  //     if (nextSlide > currentSlide) {
+  //       console.log($(".year_card").eq(currentSlide).nextAll());
+  //       // Forward direction
+  //       console.log(currentSlide);
+  //       $(".year_card").eq(currentSlide).find(".year_box").css({
+  //         "background-color": "#e97176",
+  //         color: "#fff",
+  //       });
+  //       $(".year_card")
+  //         .eq(currentSlide)
+  //         .find(".line_after")
+  //         .css("background-color", "#e97176");
+  //     } else {
+  //       // Backward direction]
+  //       $(".year_card").eq(currentSlide).find(".year_box").css({
+  //         "background-color": "#fff",
+  //         color: "#000",
+  //       });
+  //       $(".year_card")
+  //         .eq(currentSlide)
+  //         .find(".line_after")
+  //         .css("background-color", "#fff");
+  //     }
+  //   }
+  // );
 
 
   // features_slider_mobile
