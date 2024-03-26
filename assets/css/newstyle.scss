@@ -1137,7 +1137,7 @@ $background-color_1: $secondColor;
 }
 
 .work_withtop {
-  .btn{
+  .btn {
     position: relative;
     padding: 8px 35px;
     overflow: hidden;
@@ -1201,6 +1201,78 @@ $background-color_1: $secondColor;
       }
       img {
         filter: brightness(0);
+      }
+    }
+  }
+}
+
+.case_study_internal {
+  .btn_more {
+    .btn {
+      position: relative;
+      padding: 8px 35px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 1;
+      width: max-content;
+      &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        top: -1em;
+        left: -1em;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        left: calc(100% + 1em);
+        top: calc(100% + 1em);
+      }
+
+      span,
+      i {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        border-color: #fff;
+        &::before {
+          height: 410px;
+          width: 410px;
+        }
+        &::after {
+          height: 410px;
+          width: 410px;
+        }
+        span,
+        i {
+          color: #000;
+        }
+        img {
+          filter: brightness(0%);
+        }
+        span {
+          color: #000;
+        }
+        img {
+          filter: brightness(0);
+        }
       }
     }
   }

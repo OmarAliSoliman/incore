@@ -1090,6 +1090,73 @@
   filter: brightness(0);
 }
 
+.case_study_internal .btn_more .btn {
+  position: relative;
+  padding: 8px 35px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+  width: -moz-max-content;
+  width: max-content;
+}
+.case_study_internal .btn_more .btn::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  top: -1em;
+  left: -1em;
+}
+.case_study_internal .btn_more .btn::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+.case_study_internal .btn_more .btn span,
+.case_study_internal .btn_more .btn i {
+  transition: all 0.3s ease-in-out;
+}
+.case_study_internal .btn_more .btn:hover {
+  border-color: #fff;
+}
+.case_study_internal .btn_more .btn:hover::before {
+  height: 410px;
+  width: 410px;
+}
+.case_study_internal .btn_more .btn:hover::after {
+  height: 410px;
+  width: 410px;
+}
+.case_study_internal .btn_more .btn:hover span,
+.case_study_internal .btn_more .btn:hover i {
+  color: #000;
+}
+.case_study_internal .btn_more .btn:hover img {
+  filter: brightness(0%);
+}
+.case_study_internal .btn_more .btn:hover span {
+  color: #000;
+}
+.case_study_internal .btn_more .btn:hover img {
+  filter: brightness(0);
+}
+
 @media (max-width: 600px) {
   .download_profile .download_links {
     flex-direction: column !important;

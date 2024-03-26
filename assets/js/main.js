@@ -85,6 +85,18 @@ $(document).ready(function () {
     });
   }
 
+  if($(".brands_mobile_slider").length){
+    $(".brands_mobile_slider").slick({
+      speed: 5000,
+      infinite: true,
+      loop: true,
+      autoplaySpeed: 100,
+      centerMode: false,
+      autoplay: true,
+      cssEase: "linear",
+    })
+  }
+
   if ($(".custom_navbar").length) {
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > 20) {

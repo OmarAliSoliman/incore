@@ -443,7 +443,7 @@ body.modal-open .mm-slideout {
 }
 .website_heaeder .header_text {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin-bottom: 40px;
 }
 .website_heaeder .header_link {
@@ -613,6 +613,9 @@ body.modal-open .mm-slideout {
 }
 .inner_website_heaeder .header_content .header_text {
   margin-top: 35px;
+}
+.inner_website_heaeder .header_text {
+  font-size: 1.16rem;
 }
 
 .inner_mobile_heaeder .header_img img {
@@ -805,6 +808,7 @@ body.modal-open .mm-slideout {
   margin-bottom: 18px;
   padding: 40px 30px 50px 30px;
   text-align: center;
+  min-height: 315px;
 }
 .help_card .card_icon {
   margin-bottom: 25px;
@@ -1010,14 +1014,18 @@ body.modal-open .mm-slideout {
   margin-bottom: 71px;
 }
 .customers_say .slider_item {
-  padding: 0 25px;
+  padding: 0 5px;
+}
+.customers_say .slick-current .customers_say_card {
+  transform: scale(1);
 }
 .customers_say_card {
-  box-shadow: 0px 0px 53px rgba(145, 145, 145, 0.1607843137);
+  box-shadow: 0px 0px 23px rgba(145, 145, 145, 0.1607843137);
   border-radius: 20px;
   padding: 30px;
   margin-bottom: 40px;
   background-color: #fff;
+  transform: scale(0.97);
 }
 .customers_say_card h5 {
   font-family: helMedium;
@@ -1034,7 +1042,7 @@ body.modal-open .mm-slideout {
 }
 .customers_say_card p {
   color: #919191;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 27px;
 }
 .customers_say_card .customer_logo {
@@ -1283,7 +1291,7 @@ body.modal-open .mm-slideout {
 }
 .start_up_lunch .start_up_lunch_wrapper .card_body h4 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-family: helMedium;
 }
 .start_up_lunch .start_up_lunch_wrapper .card_body h4 span {
@@ -1576,7 +1584,7 @@ body.modal-open .mm-slideout {
   font-family: helMedium;
 }
 .how_we_do_card .card_text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .opsite_start_up_lunch {
@@ -1868,7 +1876,7 @@ body.modal-open .mm-slideout {
 .highprocess_card .card_body {
   text-align: center;
   position: absolute;
-  bottom: -150px;
+  bottom: -170px;
   z-index: 1;
 }
 .highprocess_card .card_body h5 {
@@ -1877,7 +1885,7 @@ body.modal-open .mm-slideout {
   font-size: 1.1rem;
 }
 .highprocess_card .card_body p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #363636;
 }
 .highprocess_card .outer_circle {
@@ -1909,7 +1917,7 @@ body.modal-open .mm-slideout {
   background-color: #363636;
 }
 .highprocess_card.gray_highprocess_card .card_body {
-  top: -170px;
+  top: -190px;
 }
 .highprocess_card.gray_highprocess_card .half_circle {
   top: unset;
@@ -2066,7 +2074,8 @@ body.modal-open .mm-slideout {
   font-family: helMedium;
   transition: all 0.3s ease-in-out;
 }
-.blogs_cards .more_articles a span, .blogs_cards .more_articles a i {
+.blogs_cards .more_articles a span,
+.blogs_cards .more_articles a i {
   transition: all 0.3s ease-in-out;
 }
 
@@ -2372,7 +2381,7 @@ body.modal-open .mm-slideout {
   padding-left: 40px;
 }
 .about_us_contetnt .years_content_parg p {
-  font-size: 1.1rem;
+  font-size: 1.13rem;
   color: #232932;
   line-height: 33px;
   margin: 0;
@@ -2424,7 +2433,7 @@ body.modal-open .mm-slideout {
   position: relative;
 }
 .vision_mission .vision_mission_content p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin: 0;
 }
 .vision_mission .vision_mission_content .quto1 {
@@ -2456,7 +2465,7 @@ body.modal-open .mm-slideout {
 
 /* ================================================================ */
 .case_study_internal {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   margin-top: -150px;
@@ -2478,7 +2487,7 @@ body.modal-open .mm-slideout {
   font-family: helMedium;
 }
 .case_study_internal .case_app_box p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #363636;
 }
 .case_study_internal .btn_more {
@@ -2503,7 +2512,7 @@ body.modal-open .mm-slideout {
 
 /* ================================================================ */
 .what_make {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   margin-top: -150px;
@@ -2517,13 +2526,13 @@ body.modal-open .mm-slideout {
   text-align: center;
 }
 .what_make .what_make_parg p {
-  color: #1C1C20;
+  color: #1c1c20;
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
 .what_avilible_jobs {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   padding: 60px 0 100px 0;
 }
 
@@ -2606,7 +2615,7 @@ body.modal-open .mm-slideout {
 
 /* ================================================================ */
 .case_study {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   margin-top: -150px;
@@ -2628,7 +2637,7 @@ body.modal-open .mm-slideout {
   flex-wrap: wrap;
 }
 .case_study .app_info .ifo li p {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   border-radius: 10px;
   padding: 5px 13px;
   font-size: 0.7rem;
@@ -2690,7 +2699,7 @@ body.modal-open .mm-slideout {
 }
 
 .second_case_study {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-top: 0;
@@ -3222,7 +3231,8 @@ body.modal-open .mm-slideout {
     margin-bottom: 10px;
     text-align: center;
   }
-  .case_study .app_download a, .case_study .btn_options a {
+  .case_study .app_download a,
+  .case_study .btn_options a {
     width: 100%;
     margin-bottom: 15px;
     text-align: center;
@@ -3244,4 +3254,23 @@ body.modal-open .mm-slideout {
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+.brands_mobile {
+  display: none;
+}
+.brands_mobile .slider_item {
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .brands_mobile {
+    display: block;
+  }
+  .brands_mobile .slick-list {
+    padding-bottom: 40px;
+  }
+  .brands_cards {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
