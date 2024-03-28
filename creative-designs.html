@@ -85,33 +85,161 @@
   </div>
 
 
+   <!-- mobile menu -->
+   <nav id="menu">
+    <ul>
+      <li>
+        <a class="mobile-menu-item" @click="closeMenu" href="./index.html">Home 1</a>
+      </li>
+      <li class="mobile-menu-item">
+        <span class="mobile-menu-item" style="color: #fff !important">Products</span>
+        <ul>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="/e-commerce">E-Commerce Mobile
+              App</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" href="https://treffenapp.com/" target="_blank">Event Management Solution</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mobile-menu-item">
+        <span class="mobile-menu-item">Services</span>
+        <ul>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="./creative-designs.html">Creative Design & UI/UX
+              Design</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="./digital-marketing.html">Digital
+              Marketing</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="./mobile-app-development.html">Mobile App
+              Development</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="./web-development.html">Web App
+              Development</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="./it-consultancy.html">IT Consultancy & DevOps
+              Service</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" href="/hosting-and-servers">Hosting &
+              Servers</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="mobile-menu-item" @click="closeMenu" href="./case-study.html">Case Studies</a>
+      </li>
+
+      <li>
+        <a class="mobile-menu-item" @click="closeMenu" href="/company">Company</a>
+      </li>
+
+      <li>
+        <a class="mobile-menu-item" @click="closeMenu" href="./blog-articles.html">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="custom_navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-3 col-lg-2">
           <div class="navbar_logo">
-            <img src="./assets/images/logo.svg" alt="logo" title="logo">
+            <a href="/">
+              <img src="../assets/images/logo.svg" alt="logo" title="logo" />
+            </a>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-7">
           <div class="nav_links">
             <ul class="list-unstyled d-flex align-items-center justify-content-between">
-              <li class="nav_item active"><a href="" class="nav_link">Home</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Products <i class="fa-solid fa-caret-down"></i></a></li>
-              <li class="nav_item"><a href="" class="nav_link">Services <i class="fa-solid fa-caret-down"></i></a></li>
-              <li class="nav_item"><a href="" class="nav_link">Case Studies</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Company</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Blog</a></li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link">Home</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link">Products <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sub_menu">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="/e-commerce">E-Commerce Mobile App</a>
+                    </li>
+                    <li>
+                      <a href="https://treffenapp.com/" target="_blank">Event Management Solution</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link">Services <i class="fa-solid fa-caret-down"></i></a>
+                <div class="sub_menu">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="./creative-designs.html">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        Creative Design & UI/UX Design
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./digital-marketing.html">
+                        <i class="fa fa-chart-line"></i>
+                        Digital Marketing
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./mobile-app-development.html">
+                        <i class="fa fa-mobile-android-alt"></i>
+                        Mobile App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./web-development.html">
+                        <i class="fa fa-desktop-alt"></i>
+                        Web App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./it-consultancy.html">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Technical Consultancy & DevOps Service
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/hosting-and-servers">
+                        <i class="fa fa-server"></i>
+                        Hosting & Servers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav_item">
+                <a href="./case-study.html" class="nav_link">Case Studies</a>
+              </li>
+              <li class="nav_item">
+                <a href="/company" class="nav_link">Company</a>
+              </li>
+              <li class="nav_item">
+                <a href="./blog-articles.html" class="nav_link">Blog</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <div class="navbar_content d-flex align-items-center justify-content-end">
-            <a href="#" class="d-flex align-items-center phone_btn">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+971 58 665 1844&text=Hello Intcore Team"
+              class="d-flex align-items-center phone_btn whatsapp-contact">
               <i class="fas fa-phone"></i>
-              <span>+971529235518</span>
+              <span>+971586651844</span>
             </a>
-            <a href="#" class="cont_btn">
+            <a href="./contact-us.html" class="cont_btn">
               Contact us
             </a>
           </div>
@@ -124,14 +252,22 @@
     <div class="container-fluid pd-100">
       <div class="wrapper d-flex align-items-center justify-content-between">
         <div class="burger_men">
-          <a href="">
+          <a href="#menu">
             <i class="fas fa-bars"></i>
           </a>
         </div>
         <div class="mobile_oprion">
           <ul class="d-flex align-items-center list-unstyled">
-            <li><a href=""><i class="fas fa-phone"></i></a></li>
-            <li><a href=""><img src="./assets/images/chat.svg" alt=""></a></li>
+            <li>
+              <a href="tel:+971 58 665 1844">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=+971 58 665 1844&text=Hello Intcore Team">
+                <img src="../assets/images/chat.svg" alt="Whatsapp chat" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
