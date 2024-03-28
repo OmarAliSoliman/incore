@@ -63,6 +63,7 @@
 
   <!-- for english version please change style to ar style ./assets/css/style-ar.css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/custom.style.css" />
   <link rel="stylesheet" href="./assets/css/newstyle.css">
   <title>Home Page - Intcore website home</title>
 </head>
@@ -70,38 +71,82 @@
 <body>
 
 
+
+  <div class="transition-container from-left">
+    <span class="tile"></span>
+    <span class="tile"></span>
+    <span class="tile"></span>
+    <span class="tile"></span>
+    <span class="tile"></span>
+    <span class="tile"></span>
+
+    <shape></shape>
+    <shape></shape>
+    <shape></shape>
+  </div>
+
+
+
   <!-- mobile menu -->
   <nav id="menu">
     <ul>
-      <li><a>Home</a></li>
       <li>
-        <span>Products</span>
+        <a class="mobile-menu-item" @click="closeMenu" to="/">Home 1</a>
+      </li>
+      <li class="mobile-menu-item">
+        <span class="mobile-menu-item" style="color: #fff !important">Products</span>
         <ul>
-          <li><a href="">Products 1</a></li>
-          <li><a href="">Products 2</a></li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/e-commerce">E-Commerce Mobile
+              App</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" href="https://treffenapp.com/" target="_blank">Event Management Solution</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mobile-menu-item">
+        <span class="mobile-menu-item">Services</span>
+        <ul>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/ui-ux-design">Creative Design & UI/UX
+              Design</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/digital-marketing">Digital
+              Marketing</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/mobile-app-development">Mobile App
+              Development</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/web-app-development">Web App
+              Development</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/technical-consulting">IT Consultancy & DevOps
+              Service</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item" @click="closeMenu" to="/hosting-and-servers">Hosting &
+              Servers</a>
+          </li>
         </ul>
       </li>
 
       <li>
-        <span>Services</span>
-        <ul>
-          <li><a href="">Services 1</a></li>
-          <li><a href="">Services 2</a></li>
-        </ul>
+        <a class="mobile-menu-item" @click="closeMenu" to="/app-portfolio">Case Studies</a>
       </li>
 
       <li>
-        <a href="">Case Studies</a>
+        <a class="mobile-menu-item" @click="closeMenu" to="/company">Company</a>
       </li>
 
       <li>
-        <a href="">Company</a>
+        <a class="mobile-menu-item" @click="closeMenu" to="/blog">Blog</a>
       </li>
-
-      <li>
-        <a href="">Blog</a>
-      </li>
-
     </ul>
   </nav>
 
@@ -110,21 +155,27 @@
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-3 col-lg-2">
           <div class="navbar_logo">
-            <img src="./assets/images/logo.svg" alt="logo" title="logo">
+            <a to="/">
+              <img src="../assets/images/logo.svg" alt="logo" title="logo" />
+            </a>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-7">
           <div class="nav_links">
             <ul class="list-unstyled d-flex align-items-center justify-content-between">
-              <li class="nav_item active"><a href="" class="nav_link">Home</a></li>
+              <li class="nav_item">
+                <a to="/" class="nav_link">Home</a>
+              </li>
               <li class="nav_item">
                 <a class="nav_link">Products <i class="fa-solid fa-caret-down"></i></a>
                 <div class="sub_menu">
                   <ul class="list-unstyled">
-                    <li><a href="">Products 1</a></li>
-                    <li><a href="">Products 2</a></li>
-                    <li><a href="">Products 3</a></li>
-                    <li><a href="">Products 4</a></li>
+                    <li>
+                      <a to="/e-commerce">E-Commerce Mobile App</a>
+                    </li>
+                    <li>
+                      <a href="https://treffenapp.com/" target="_blank">Event Management Solution</a>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -132,26 +183,65 @@
                 <a class="nav_link">Services <i class="fa-solid fa-caret-down"></i></a>
                 <div class="sub_menu">
                   <ul class="list-unstyled">
-                    <li><a href="">Services 1</a></li>
-                    <li><a href="">Services 2</a></li>
-                    <li><a href="">Services 3</a></li>
-                    <li><a href="">Services 4</a></li>
+                    <li>
+                      <a to="/ui-ux-design">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        Creative Design & UI/UX Design
+                      </a>
+                    </li>
+                    <li>
+                      <a to="/digital-marketing">
+                        <i class="fa fa-chart-line"></i>
+                        Digital Marketing
+                      </a>
+                    </li>
+                    <li>
+                      <a to="/mobile-app-development">
+                        <i class="fa fa-mobile-android-alt"></i>
+                        Mobile App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a to="/web-app-development">
+                        <i class="fa fa-desktop-alt"></i>
+                        Web App Development
+                      </a>
+                    </li>
+                    <li>
+                      <a to="/technical-consulting">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Technical Consultancy & DevOps Service
+                      </a>
+                    </li>
+                    <li>
+                      <a to="/hosting-and-servers">
+                        <i class="fa fa-server"></i>
+                        Hosting & Servers
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </li>
-              <li class="nav_item"><a href="" class="nav_link">Case Studies</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Company</a></li>
-              <li class="nav_item"><a href="" class="nav_link">Blog</a></li>
+              <li class="nav_item">
+                <a to="/app-portfolio" class="nav_link">Case Studies</a>
+              </li>
+              <li class="nav_item">
+                <a to="/company" class="nav_link">Company</a>
+              </li>
+              <li class="nav_item">
+                <a to="/blog" class="nav_link">Blog</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <div class="navbar_content d-flex align-items-center justify-content-end">
-            <a href="#" class="d-flex align-items-center phone_btn">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+971 58 665 1844&text=Hello Intcore Team"
+              class="d-flex align-items-center phone_btn whatsapp-contact">
               <i class="fas fa-phone"></i>
-              <span>+971529235518</span>
+              <span>+971586651844</span>
             </a>
-            <a href="#" class="cont_btn">
+            <a to="/contact-us" class="cont_btn">
               Contact us
             </a>
           </div>
@@ -170,8 +260,16 @@
         </div>
         <div class="mobile_oprion">
           <ul class="d-flex align-items-center list-unstyled">
-            <li><a href=""><i class="fas fa-phone"></i></a></li>
-            <li><a href=""><img src="./assets/images/chat.svg" alt=""></a></li>
+            <li>
+              <a href="tel:+971 58 665 1844">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=+971 58 665 1844&text=Hello Intcore Team">
+                <img src="../assets/images/chat.svg" alt="Whatsapp chat" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -200,7 +298,7 @@
               <i class="fa-solid fa-angles-right"></i>
             </a>
             <div class="header_boxes" data-aos="fade-up" data-aos-duration="1000">
-              <img src="./assets/images/headerbox.svg" alt="">
+              <img src="./assets/images/headerbox.png" alt="">
               <!-- <div class="row">
                 <div class="col col-md-4 col-lg-4">
                   <div class="header_box d-flex align-items-center">
@@ -443,123 +541,195 @@
       <div class="brands_cards">
         <div class="row">
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="1000" data-aos-duration="200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="1000" data-aos-duration="200"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="400" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/b8790e9.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="400"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/b8790e9.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="600" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/fa3e81a.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="600"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/fa3e81a.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="800" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/3b3db1d.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="800"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/3b3db1d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1000" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/c4b8efa.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1000"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/c4b8efa.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/4e1c6b4.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1200"
+              class="brand_card aos-init aos-animate">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/4e1c6b4.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/1b36850.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/1b36850.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/23430c1.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/23430c1.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca6e814.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca6e814.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/df6e76f.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/df6e76f.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/03d3d2e.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/03d3d2e.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/26383bd.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/26383bd.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/2d251eb.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/2d251eb.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca4aeff.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca4aeff.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/089a973.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/089a973.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/a4d68a2.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/a4d68a2.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca7b3ed.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/ca7b3ed.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/454c25d.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/454c25d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/51632b0.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/51632b0.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/9a22beb.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/9a22beb.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/d3f8cb4.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/d3f8cb4.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/16f95bb.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/16f95bb.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/470250b.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/470250b.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
-            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300" class="brand_card aos-init">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/7741686.svg" alt="brand" title="brand"></div>
+            <div data-aos="fade-up" data-tilt data-tilt-max="100" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.8" data-tilt-perspective="500" data-aos-duration="1300"
+              class="brand_card aos-init">
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/7741686.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
         </div>
@@ -570,22 +740,26 @@
         <div class="brands_mobile_slider">
           <div class="slider_item">
             <div data-aos="fade-up" data-aos-duration="200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand"></div>
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="slider_item">
             <div data-aos="fade-up" data-aos-duration="200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand"></div>
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="slider_item">
             <div data-aos="fade-up" data-aos-duration="200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand"></div>
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
           <div class="slider_item">
             <div data-aos="fade-up" data-aos-duration="200" class="brand_card aos-init aos-animate">
-              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand"></div>
+              <div class="card_icon"><img src="https://new.intcore.com/_nuxt/img/e32459d.svg" alt="brand" title="brand">
+              </div>
             </div>
           </div>
         </div>
